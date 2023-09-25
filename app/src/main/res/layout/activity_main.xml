@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:padding="6dp"
+            android:background="@drawable/bg_borger"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_person"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="FISHni kiriting" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:background="@drawable/bg_borger"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_email"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="Emailingizni kiriting" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/tugma_rangi"
+            android:text="@string/kirish" />
+
+    </LinearLayout>
+
+</LinearLayout>
